@@ -65,7 +65,7 @@
 
 - name: Available swap space and swap mounts
   debug:
-    msg: "{{ _swap_info['stdout'] if _swap_info['stderr'] == '' else _swap_info['stderr'] == '' }}"
+    msg: "{{ _swap_info['stdout'] if not _swap_info['stderr'] else _swap_info['stderr'] }}"
   when: not _uses_swapfile['stat']['exists']
 
 - name: Uninstall zram-conf
