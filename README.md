@@ -1,4 +1,4 @@
-# ansible-role-ssh <!-- omit in toc -->
+# ansible-role-use-swapfile <!-- omit in toc -->
 
 An [Ansible](https://www.ansible.com) role to favor dynamic swapfiles over static swap devices on debian based systems.
 
