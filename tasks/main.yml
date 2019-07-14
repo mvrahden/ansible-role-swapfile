@@ -18,7 +18,7 @@
   become: true
   register: _swapoff_output
   changed_when: false
-  failed_when: _swapoff_output['stderr'] != ''
+  failed_when: _swapoff_output['stderr']
 
 - name: Identify mounting points of swap devices
   shell: blkid | grep swap
