@@ -1,1 +1,2 @@
 ---
+swapfile_swapon: true # keep swapfile service running?

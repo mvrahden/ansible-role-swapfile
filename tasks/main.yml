@@ -81,3 +81,11 @@
     name: dphys-swapfile
     state: present
     force_apt_get: yes
+
+- name: Disabling Swap (optional)
+  service:
+    name: dphys-swapfile
+    enabled: false
+    state: stopped
+  become: true
+  when: not swapfile_swapon|bool
