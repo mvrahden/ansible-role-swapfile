@@ -1,0 +1,36 @@
+galaxy_info:
+  author: Menno van Rahden
+  role_name: ssh
+  description: >
+    An Ansible role to favor dynamic swapfiles over static swap devices on debian based systems.
+
+  license: MIT
+
+  min_ansible_version: 2.2
+
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Raspbian
+      versions:
+        - all
+
+  galaxy_tags:
+    - swap
+    - memory
+    - debian
+    - ubuntu
+    - raspbian
+    - raspberry
+    - raspberrypi
+    - swapfile
+    - mounts
+    - dphys
+    - dphys-swapfile
+    - zram
+
+dependencies: []
