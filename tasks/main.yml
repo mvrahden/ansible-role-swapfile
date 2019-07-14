@@ -51,7 +51,9 @@
   when: not _uses_swapfile['stat']['exists']
 
 - name: Remove identified mounting points of swap devices
-  shell: umount {{ item }}
+  mount: 
+    path: "{{ item }}"
+    state: unmounted
   loop: "{{ swap_mounts }}"
   ignore_errors: true
   when: > 
