@@ -1,6 +1,6 @@
 galaxy_info:
   author: Menno van Rahden
-  role_name: use-swapfile
+  role_name: swapfile
   description: >
     An Ansible role to favor dynamic swapfiles over static swap devices on debian based systems.
 
