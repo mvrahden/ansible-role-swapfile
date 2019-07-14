@@ -15,9 +15,6 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
-    - name: Raspbian
-      versions:
-        - all
 
   galaxy_tags:
     - swap
@@ -30,7 +27,7 @@ galaxy_info:
     - swapfile
     - mounts
     - dphys
-    - dphys-swapfile
+    - dphysswapfile
     - zram
 
 dependencies: []
