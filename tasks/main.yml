@@ -28,7 +28,7 @@
   become: true
   register: _mount_points
   ignore_errors: true
-  changed_when: 
+  changed_when: false
   when: not _uses_swapfile['stat']['exists']
 
 - name: Debug _mount_points
